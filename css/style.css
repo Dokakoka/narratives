@@ -1,61 +1,15 @@
-@charset "utf-8";
-/* ================================================== */
+:root {
+    --primary-color-1: #FAB702;
+    --primary-color-1-rgb: 250, 183, 2;
+}
 
-/* created by designesia
+@font-face {
+    font-family: 'cairo';
+    src: url('../fonts/cairo/Cairo-VariableFont_slnt\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
-* body
-* header
-	* subheader
-* navigation
-* content
-* section
-* footer
-* sidebar
-* blog
-* products
-* contact
-* coming soon page
-* elements
-	* address
-	* border
-	* breadcrumb
-	* button
-	* columns
-	* counter
-	* divider
-	* dropcap
-	* form
-	* heading
-	* icon font
-	* list
-	* map
-	* package
-	* page heading
-	* pagination
-	* pricing
-	* progress bar
-	* social icons
-	* spacer
-	* tabs
-	* team
-	* testimonial
-* media query
-
-/* import fonts */
-
-
-@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=Allura);
-/* import icons */
-
-@import url("../fonts/font-awesome/css/font-awesome.css");
-@import url("../fonts/elegant_font/HTML_CSS/style.css");
-@import url("../fonts/et-line-font/style.css");
-/* ================================================== */
-
-/* body */
-
-/* ================================================== */
 
 body {
     display: none;
@@ -67,6 +21,7 @@ body {
     padding: 0;
     background: #18191B;
 }
+
 
 .call-buton .cc-calto-action-ripple {
     text-align: left;
@@ -202,26 +157,12 @@ body.no-scroll::-webkit-scrollbar {
 
 .noselect {
     -webkit-touch-callout: none;
-    /* iOS Safari */
     -webkit-user-select: none;
-    /* Safari */
     -khtml-user-select: none;
-    /* Konqueror HTML */
     -moz-user-select: none;
-    /* Old versions of Firefox */
     -ms-user-select: none;
-    /* Internet Explorer/Edge */
     user-select: none;
-    /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
 }
-
-
-/* ================================================== */
-
-/*  header	*/
-
-/* ================================================== */
 
 header {
     width: 100%;
@@ -437,13 +378,6 @@ header.smaller.scroll-transparent {
     background: none !important;
 }
 
-
-/* ================================================== */
-
-/* navigation */
-
-/* ================================================== */
-
 .header-custom:not(.header-mobile) {
     height: auto;
     position: relative;
@@ -550,12 +484,6 @@ header:not(.header-mobile):not(.force-header-mobile) #mainmenu>li:hover ul.mega 
     background: url(../images/background/slide.webp) top fixed;
 }
 
-/* ================================================== */
-
-/* content */
-
-/* ================================================== */
-
 #content {
     width: 100%;
     background: #fff;
@@ -570,12 +498,6 @@ header:not(.header-mobile):not(.force-header-mobile) #mainmenu>li:hover ul.mega 
 #content {
     background: #18191b;
 }
-
-/* ================================================== */
-
-/* section */
-
-/* ================================================== */
 
 section {
     padding: 90px 0 90px 0;
@@ -597,11 +519,6 @@ section.custom-1 {
     min-height: 100%;
     height: auto;
 }
-/* ================================================== */
-
-/* footer */
-
-/* ================================================== */
 
 footer {
     background: #111;
@@ -731,15 +648,6 @@ header.smaller.header-scroll:not(.autoshow) {
     position: absolute;
 }
 
-/* ================================================== */
-
-
-
-/* contact form */
-
-/* ================================================== */
-
-
 #contact1 input[type=text],
 #contact1 textarea,
 #contact1 input[type=email],
@@ -816,11 +724,6 @@ footer.light #form_subscribe input[type=text] {
 .error {
     color: #d9534f;
 }
-/* ================================================== */
-
-/* heading */
-
-/* ------------------------------ */
 
 h1,
 h2,
@@ -1010,12 +913,6 @@ footer.light h6,
     color: #fff;
 }
 
-
-
-/* social-icons */
-
-/* ================================================== */
-
 .social-icons {
     display: inline-block;
 }
@@ -1059,23 +956,6 @@ footer.light .social-icons i {
     color: #000000;
     background: #ffffff;
 }
-
-/*
-	.social-icons .fa-facebook{	background:#305fb3;	}
-	.social-icons .fa-twitter{	background:#00d7d5;	}
-	.social-icons .fa-rss{ background:#fca600;	}
-	.social-icons .fa-google-plus{ background:#d7482a;	}
-	.social-icons .fa-skype{ background:#12c7ef;	}
-	.social-icons .fa-dribbble{ background:#f06eaa;	}
-	*/
-
-
-
-/* ================================================== */
-
-/* anim */
-
-/* ================================================== */
 
 de_tab .de_nav li span,
 .feature-box-small-icon i,
@@ -1161,15 +1041,6 @@ ul#slide-list *,
     outline: none;
 }
 
-/* ================================================== */
-
-
-/* map */
-
-/* ================================================== */
-
-/* --------------- map --------------- */
-
 #map {
     width: 100%;
     height: 500px;
@@ -1208,22 +1079,6 @@ ul#slide-list *,
     padding-right: 20px;
 }
 
-/* ================================================== */
-
-/* overide bootstrap 5 */
-
-/* ================================================== */
-
-
-/* ======================================== */
-
-
-/* ================================================== */
-
-/* image position */
-
-/* ================================================== */
-
 .img-left {
     float: left;
     margin: 5px 15px 15px 0;
@@ -1233,11 +1088,6 @@ ul#slide-list *,
     float: right;
     margin: 5px 0 15px 15px;
 }
-
-/* ================================================== */
-/* transition */
-
-/* ================================================== */
 
 a,
 a:hover,
@@ -1263,12 +1113,6 @@ a:hover,
 .center-div {
     margin: 0 auto !important;
 }
-
-/* ================================================== */
-
-/* gallery */
-
-/* ================================================== */
 
 .de_carousel .item {
     width: 100%;
@@ -1380,10 +1224,6 @@ a:hover,
         width: 100%
     }
 }
-
-/* ================================================== */
-
-/* video-button close */
 
 .clearfix {
     width: 100%;
@@ -1874,8 +1714,6 @@ section.no-padding {
     right: -15px;
 }
 
-/* new owl */
-
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 20px;
 }
@@ -1927,8 +1765,6 @@ section.no-padding {
 .owl-dots-overlay .owl-dots .owl-dot:hover span {
     background: #ffffff !important;
 }
-
-/* new owl close */
 
 .text-slider {
     line-height: 60px;
@@ -1984,8 +1820,6 @@ section.no-padding {
 .wow {
     visibility: hidden;
 }
-
-/* mouse scroll icon begin */
 
 .mouse {
     position: absolute;
@@ -2058,10 +1892,6 @@ section.no-padding {
         transform: translateY(20px);
     }
 }
-
-
-
-/* supersized close */
 
 header.force-header-mobile {
     display: block !important;
@@ -2467,10 +2297,6 @@ header.force-header-mobile #mainmenu li ul.mega li ul {
     margin-bottom: 0;
 }
 
-/* -------------------------------------------------- 
-	design for 480px
-/* -------------------------------------------------- */
-
 @media only screen and (max-width: 767px) {
     .slide_text {
         display: none;
@@ -2503,12 +2329,6 @@ header.force-header-mobile #mainmenu li ul.mega li ul {
     }
 }
 
-/* ================================================== */
-
-/* R E S P O N S I V E */
-
-/* ================================================== */
-
 @media(min-width:980px) and (max-width: 1199px) {
     header #mainmenu a {
         padding-left: 5px;
@@ -2519,17 +2339,11 @@ header.force-header-mobile #mainmenu li ul.mega li ul {
     }
 }
 
-/* -------------------------------------------------- 
-	design for 768px
-	/* ================================================== */
-
 @media (min-width: 768px) and (max-width: 979px) {
     .slider_text {
         padding-top: 0px;
     }
 }
-
-/* mobile */
 
 @media only screen and (max-width: 992px) {
     .de-navbar-left #subheader {
@@ -3154,9 +2968,7 @@ header.force-header-mobile #mainmenu li ul.mega li ul {
         display: block;
         clear: both;
     }
-    /* -------------------------------------------------- 
-	custom for 320px & 480px 
-	/* -------------------------------------------------- */
+
     @media only screen and (max-width: 767px) {
         .container {
             padding-left: 30px;
@@ -3174,10 +2986,6 @@ header.force-header-mobile #mainmenu li ul.mega li ul {
             float: left;
             width: 49.9% !important;
         }
-        /*.item{
-	font-size:48px;
-	line-height:48px;
-	}*/
         .item i {
             font-size: 36px;
         }
@@ -3259,9 +3067,7 @@ header.force-header-mobile #mainmenu li ul.mega li ul {
             right: 0;
         }
     }
-    /* -------------------------------------------------- 
-	design for 480px
-	/* -------------------------------------------------- */
+
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container {
             padding-left: 30px;
@@ -3272,9 +3078,6 @@ header.force-header-mobile #mainmenu li ul.mega li ul {
             margin-bottom: 30px;
         }
     }
-    /* -------------------------------------------------- 
-	design for 320px
-	/* -------------------------------------------------- */
     @media only screen and (max-width: 480px) {
         .pf_full_width .item {
             float: left;
@@ -3285,10 +3088,6 @@ header.force-header-mobile #mainmenu li ul.mega li ul {
             letter-spacing: 1vw;
             line-height: 15vw;
         }
-        /*.item{
-	font-size:32px;
-	line-height:32px;
-	}*/
         .item i {
             font-size: 24px;
         }

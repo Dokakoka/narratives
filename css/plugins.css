@@ -1,28 +1,4 @@
 @charset "UTF-8";
-/* 
-- animate
-- isotope
-- jpreloader
-- magnific-popup
-- owl.carousel
-- owl.theme
-- owl.transitions
-- totop
-- twentytwenty
-*/
-
-/* -------------------------------------------------- */
-
-/* animate.css */
-
-/* -------------------------------------------------- */
-
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2013 Daniel Eden
-*/
 
 .animated {
     -webkit-animation-duration: 1s;
